@@ -52,7 +52,7 @@ public class LogReader {
         String logDate = "";
         try {
             // log file path
-            inputFile = new File("C:\\Users\\Dhruv\\Desktop\\unimelb\\Subjects\\Sem 1\\Summer Internship\\vedant_logs\\ensat.log.2018-01-19");
+            inputFile = new File(args[0]);
             it = FileUtils.lineIterator(inputFile, "UTF-8");
             while (it.hasNext()) {
                 String line = it.nextLine();
